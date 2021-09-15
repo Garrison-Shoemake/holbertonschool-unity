@@ -25,15 +25,23 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
 		rb.AddForce(movement*speed);
 
-		if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+		if (IsGrounded())
 		{
-			rb.AddForce(Vector3.up*jumpForce, ForceMode.Impulse);
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				rb.AddForce(Vector3.up*jumpForce, ForceMode.Impulse);
+			}
+			
+		}
+		else
+		{
+			rb.AddForce((Vector3.down*jumpForce)*Time.deltaTime, ForceMode.Impulse);
 		}
 
 	}
 	private bool IsGrounded()
 	{
-		return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, col.bounds.min.y, col.bounds.center.z), col.radius * .9f, groundLayers);
+		return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, col.bounds.min.y, col.bounds.center.z), col.radius, groundLayers);
 	}
 	void OnTriggerEnter(Collider other)
 	{
