@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
 		rb.AddForce(movement*speed);
 
+
+
 		if (IsGrounded())
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
