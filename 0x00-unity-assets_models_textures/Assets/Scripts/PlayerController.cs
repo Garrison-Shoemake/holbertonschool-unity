@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
+	public GameObject Player;
 	public Rigidbody rb;
 	public float speed = 50f;
 	public float jumpForce = 50f;
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	
 		rb = GetComponent<Rigidbody>();
 		col = GetComponent<CapsuleCollider>();
 	}
@@ -40,6 +42,13 @@ public class PlayerController : MonoBehaviour {
 			rb.AddForce((Vector3.down*jumpForce)*Time.deltaTime, ForceMode.Impulse);
 		}
 
+	}
+	void Update()
+	{
+		if (Player.transform.position.y < -15)
+		{
+			Player.transform.position = new Vector3(0, 1.25f, 0);		
+		}
 	}
 	private bool IsGrounded()
 	{
