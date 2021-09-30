@@ -29,13 +29,26 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         pauseCanvas.SetActive(true);
         Time.timeScale = 0f;
-        
     }
     public void Resume()
     {
         isPaused = false;
         pauseCanvas.SetActive(false);
-        Time.timeScale = 1f;
-        
+        Time.timeScale = 1f;    
+    }
+    public void Restart()
+    {
+        Resume();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void MainMenu()
+    {
+        Resume();
+        SceneManager.LoadScene(0);
+    }
+    public void Options()
+    {
+        Resume();
+        SceneManager.LoadScene(4);
     }
 }
