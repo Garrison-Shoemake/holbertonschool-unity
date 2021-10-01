@@ -7,6 +7,7 @@
      public Transform player;
  
      public Vector3 offset;
+     public bool isInverted;
  
      void Start () {
          offset = new Vector3(player.position.x, player.position.y + 2.5f, player.position.z - 6.25f);

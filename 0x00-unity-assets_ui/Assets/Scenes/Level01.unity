@@ -956,7 +956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759737532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.59, y: 21.36, z: 23.76}
+  m_LocalPosition: {x: -2.56, y: 0.44, z: -5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -975,6 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 112032362}
+  winCanvas: {fileID: 2117507580}
   timesUp: {fileID: 1866775890}
 --- !u!1 &771369194 stripped
 GameObject:
@@ -1088,6 +1089,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8956276461189781062, guid: 8c782e7d7ef6f7e40affe7c637c75956, type: 3}
+--- !u!1 &868024595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7822528993071713124, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+  m_PrefabInstance: {fileID: 2882504989725672819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &868024600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868024595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b82d44b39d967348834a444b747e4fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 112032362}
+  winCanvas: {fileID: 2117507580}
+  timesUp: {fileID: 1866775890}
 --- !u!1001 &906663311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1606,6 +1627,7 @@ MonoBehaviour:
   turnSpeed: 9
   player: {fileID: 112032366}
   offset: {x: 0, y: 2.5, z: -6.25}
+  isInverted: 0
 --- !u!1 &1230242985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +2721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22f5d5da129f2b4e8a588776f760f46, type: 3}
+--- !u!1 &2117507580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8350312490876655361, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+  m_PrefabInstance: {fileID: 2882504989725672819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1311644976078706654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2863,9 +2890,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8253697998332206007, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+      propertyPath: m_Text
+      value: YOU WIN!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253697998332206007, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253697998332206007, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253697998332206007, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8350312490876655361, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
       propertyPath: m_Name
       value: WinCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350312490876655361, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
