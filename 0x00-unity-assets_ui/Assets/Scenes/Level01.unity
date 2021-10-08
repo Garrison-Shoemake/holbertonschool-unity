@@ -977,6 +977,7 @@ MonoBehaviour:
   player: {fileID: 112032362}
   winCanvas: {fileID: 2117507580}
   timesUp: {fileID: 1866775890}
+  winText: {fileID: 868024598}
 --- !u!1 &771369194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1586702691628044531, guid: 8c2d46ba589fa3f48b96aa3a05fa5b11, type: 3}
@@ -1094,6 +1095,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7822528993071713124, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
   m_PrefabInstance: {fileID: 2882504989725672819}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &868024598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6899925033580622145, guid: 07ef8e0de3442644da88c8240ec83e0b, type: 3}
+  m_PrefabInstance: {fileID: 2882504989725672819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868024595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &868024600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,6 +1121,7 @@ MonoBehaviour:
   player: {fileID: 112032362}
   winCanvas: {fileID: 2117507580}
   timesUp: {fileID: 1866775890}
+  winText: {fileID: 868024598}
 --- !u!1001 &906663311
 PrefabInstance:
   m_ObjectHideFlags: 0
