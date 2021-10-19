@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 112032367}
   - component: {fileID: 112032369}
   - component: {fileID: 112032370}
+  - component: {fileID: -6255511825904306889}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -163,6 +164,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 0}
+--- !u!95 &-6255511825904306889
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910522460558730843}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 881ffccd5670e1449b4c5486992d2c69, type: 3}
+  m_Controller: {fileID: 9100000, guid: 01a6c797a17b7164c87cf37707cab461, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1311644977629367558
 PrefabInstance:
   m_ObjectHideFlags: 0
