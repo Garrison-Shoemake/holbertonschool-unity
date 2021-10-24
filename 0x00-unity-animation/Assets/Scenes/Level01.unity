@@ -133,11 +133,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6910522460558730843, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
   m_PrefabInstance: {fileID: 1311644976078706654}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &112032363 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6255511825904306889, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
+  m_PrefabInstance: {fileID: 1311644976078706654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &112032366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7577310213305160722, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
   m_PrefabInstance: {fileID: 1311644976078706654}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &112032372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112032362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9f700580bc7094e9d83f5e0d1f5af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 112032363}
+  player: {fileID: 112032362}
 --- !u!1 &187832366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 47d0f1e191e985549b5e27403191206c, type: 3}
@@ -356,6 +375,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8956276461189781062, guid: 070c662ea5f7bbb40b80911915aa7387, type: 3}
+--- !u!1 &520558308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 262764328889658934, guid: 34393fbe6cf92ce4d9fb5ed02f5308fa, type: 3}
+  m_PrefabInstance: {fileID: 6465566076417038611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &564751724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1586702691628044531, guid: 8c782e7d7ef6f7e40affe7c637c75956, type: 3}
@@ -2207,6 +2231,7 @@ GameObject:
   - component: {fileID: 1683399710}
   - component: {fileID: 1683399709}
   - component: {fileID: 1683399708}
+  - component: {fileID: 1683399712}
   m_Layer: 0
   m_Name: CutsceneCamera
   m_TagString: Untagged
@@ -2298,6 +2323,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -55.517, z: 0}
+--- !u!114 &1683399712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683399707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bbf72a5de5aab4f9731894186ebca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 112032362}
+  mainCamera: {fileID: 1226313539}
+  timerCanvas: {fileID: 520558308}
+  cutsceneCamera: {fileID: 1683399707}
+  anim: {fileID: 1683399708}
 --- !u!114 &1866775890 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2322181203769630583, guid: 34393fbe6cf92ce4d9fb5ed02f5308fa, type: 3}
@@ -2786,6 +2828,14 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 881ffccd5670e1449b4c5486992d2c69, type: 3}
+    - target: {fileID: 112032367, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 112032367, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 112032369, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
       propertyPath: TimerText
       value: 
@@ -2794,6 +2844,10 @@ PrefabInstance:
       propertyPath: pauseCanvas
       value: 
       objectReference: {fileID: 1935860498}
+    - target: {fileID: 4853037073919553687, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 01a6c797a17b7164c87cf37707cab461, type: 2}
     - target: {fileID: 6910522460558730843, guid: 2b3219d14aca89b45b602d525e87dded, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3068,6 +3122,10 @@ PrefabInstance:
     - target: {fileID: 262764328889658934, guid: 34393fbe6cf92ce4d9fb5ed02f5308fa, type: 3}
       propertyPath: m_Name
       value: TimerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 262764328889658934, guid: 34393fbe6cf92ce4d9fb5ed02f5308fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3374946561491265647, guid: 34393fbe6cf92ce4d9fb5ed02f5308fa, type: 3}
       propertyPath: m_Name
