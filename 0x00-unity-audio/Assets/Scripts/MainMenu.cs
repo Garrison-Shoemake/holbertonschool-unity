@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
     public void LevelSelect(int level)
     {
         if (level == 5)
@@ -17,4 +16,6 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("PrevScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(level);
     }
+
+    
 }
