@@ -9,6 +9,7 @@ public class WinTrigger : MonoBehaviour
     public GameObject winCanvas;
     public Text timesUp;
     public Text winText;
+    public AudioSource winning;
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Player")
@@ -21,6 +22,7 @@ public class WinTrigger : MonoBehaviour
     }
     void Win()
     {
+        winning.Play();
         winText = timesUp;
         winCanvas.SetActive(true);
     }
