@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask groundLayers;
 	public CapsuleCollider col;
 	public bool grounded;
+	public AudioSource step;
+	public AudioSource land;
+
 
 	// Use this for initialization
 	void Start () {
@@ -57,4 +60,16 @@ public class PlayerController : MonoBehaviour {
 	{
 		
 	}
+
+	private void Step()
+	{
+		step.Play();
+	}
+
+	private void Land()
+	{
+		land.Play();
+	}
+
+
 }
