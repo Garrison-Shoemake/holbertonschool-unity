@@ -1599,14 +1599,14 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2047787524}
+      - m_Target: {fileID: 1260276124}
         m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
-        m_MethodName: SetLevel
-        m_Mode: 4
+        m_MethodName: ChangeVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1627,9 +1627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ceb10c683c6be49b4a5fece4918488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM: {fileID: 24100000, guid: 4935e0c576f0d414ab8b3e518b8fcba2, type: 2}
-  SFX: {fileID: 0}
+  SFXMixer: {fileID: 24100000, guid: 4935e0c576f0d414ab8b3e518b8fcba2, type: 2}
   BGMSlider: {fileID: 1260276123}
+  SFXSlider: {fileID: 1934472058}
 --- !u!1 &1261298482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,6 +2329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934472057}
   - component: {fileID: 1934472058}
+  - component: {fileID: 1934472059}
   m_Layer: 5
   m_Name: SFXSlider
   m_TagString: Untagged
@@ -2408,10 +2409,25 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1934472059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934472056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ceb10c683c6be49b4a5fece4918488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXMixer: {fileID: 24100000, guid: 4935e0c576f0d414ab8b3e518b8fcba2, type: 2}
+  BGMSlider: {fileID: 1260276123}
+  SFXSlider: {fileID: 1934472058}
 --- !u!1 &1961851997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,9 +2809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ceb10c683c6be49b4a5fece4918488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM: {fileID: 24100000, guid: 4935e0c576f0d414ab8b3e518b8fcba2, type: 2}
-  SFX: {fileID: 0}
+  SFXMixer: {fileID: 24100000, guid: 4935e0c576f0d414ab8b3e518b8fcba2, type: 2}
   BGMSlider: {fileID: 1260276123}
+  SFXSlider: {fileID: 1934472058}
 --- !u!1001 &2101059931213255674
 PrefabInstance:
   m_ObjectHideFlags: 0
